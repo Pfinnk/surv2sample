@@ -1,7 +1,7 @@
 #include <R.h>
 #include <Rmath.h>
-#include "util_neyman.h"
 #include <Rcpp.h>
+#include "util_neyman.h"
 #include "util_datadriven.h"
 #include "surv_neyman.h"
 using namespace Rccp;
