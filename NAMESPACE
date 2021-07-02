@@ -1,8 +1,9 @@
-# Default NAMESPACE created by R
 # Remove the previous line if you edit this file
 
 # Export all names
 exportPattern("ˆ[[:alpha:]]+")
+
+useDynLib('surv2sample')
 
 # Import all packages listed as Imports or Depends
 importFrom(
