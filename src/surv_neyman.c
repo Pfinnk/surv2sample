@@ -1,11 +1,14 @@
 #include <R.h>
 #include <Rmath.h>
+#include <Rcpp.h>
 #include "util_neyman.h"
 #include "util_datadriven.h"
 #include "surv_neyman.h"
+using namespace Rccp;
 
 /* Neyman's smooth tests of euqality of survival distributions in two samples */
 
+// [[Rccp::export]]
 void twosample_neyman(double *time, int *event, int *group, int *n, int *d, int *d0,
 	int *timetransf, int *basis, int *datadriven, double *penalty, int *emptyset,
 	double *choltol, int *nsim_asympt, int *nperm, int *nboot, double *score, double *sigma,
@@ -329,6 +332,7 @@ void twosample_neyman(double *time, int *event, int *group, int *n, int *d, int 
 	
 }
 
+// [[Rccp::export]]
 void neyman_score(double *score, double *sigma, int *d, double *time, int *event, int *group,
 	int *n, int *y1, int *y2, void (*p_basis)(), int *timetransf, double *a, double *psi)
 {
@@ -430,6 +434,7 @@ void neyman_score(double *score, double *sigma, int *d, double *time, int *event
 	}
 }
 
+// [[Rccp::export]]
 void neyman_stat(double *score, double *scorework, double *sigma, double *sigmawork,
 	int *d, int *d0, double *stat_d,
 	double *stat_nested, double *stats_nested, double *stats_penal_nested, int *s_nested,
