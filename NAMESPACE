@@ -2,9 +2,9 @@
 # Remove the previous line if you edit this file
 
 # Export all names
-exportPattern(".")
+exportPattern("ˆ[[:alpha:]]+")
 
 # Import all packages listed as Imports or Depends
 import(
-  survival
+  survival, Rcpp, evalCpp
 )
