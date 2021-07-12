@@ -1,9 +1,12 @@
+// [[Rcpp::depends(RcppArmadillo)]]
 #include <R.h>
 #include <Rmath.h>
 #include <Rcpp.h>
+#include <RcppArmadillo.h>
 #include "util_neyman.h"
 #include "util_datadriven.h"
 #include "surv_neyman.h"
+
 using namespace Rcpp;
 
 /* Neyman's smooth tests of euqality of survival distributions in two samples */
