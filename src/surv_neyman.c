@@ -1,6 +1,6 @@
 // [[Rcpp::depends(RcppArmadillo)]]
 #include <R.h>
-#include <cmath.h>
+#include <Rmath.h>
 #include <Rcpp.h>
 #include <RcppArmadillo.h>
 #include "util_neyman.h"
